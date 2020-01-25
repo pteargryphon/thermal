@@ -1,0 +1,16 @@
+# Set default behavior, in case people don't have the core.autocrlf set in git config
+* text=auto
+
+# Denote files that will ALWAYS use Unix-style EOL: LF
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.Dockerfile text eol=lf
+
+# Denote files that will ALWAYS use Windows-style EOL: CRLF
+*.bat text eol=crlf
+
+# Denote files that shouldn not be modified
+*.jpg binary
+*.png binary
+*.bmp binary
+*.exe binary
